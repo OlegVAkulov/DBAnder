@@ -67,7 +67,7 @@
 </head>
 <body>
 <table class="table table-bordered">
-    <thead>
+    
     <tr>
         <th>ID</th>
         <th>NAME</th>
@@ -75,7 +75,7 @@
         <th>AGE</th>
         <th>OPERATION</th>
     </tr>
-    </thead>
+
 
 
     <c:forEach var="user" items="${usersList}">
