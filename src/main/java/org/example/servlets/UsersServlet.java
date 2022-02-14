@@ -23,7 +23,7 @@ public class UsersServlet extends HttpServlet {
         List<User> usersList = userDAO.getAllUsers();
         try {
             request.setAttribute("usersList", usersList);
-            RequestDispatcher dispatcher = request.getRequestDispatcher("/allUsers.jsp");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("/allUsers.jsp, /index.jsp");
             dispatcher.forward(request, response);
         } catch (ServletException e) {
             e.printStackTrace();
