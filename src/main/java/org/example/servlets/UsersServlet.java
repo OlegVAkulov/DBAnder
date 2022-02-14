@@ -24,7 +24,7 @@ public class UsersServlet extends HttpServlet {
         try {
             request.setAttribute("usersList", usersList);
             RequestDispatcher dispatcher = request.getRequestDispatcher("/allUsers.jsp");
-            dispatcher.forward(request, response);
+            dispatcher.forward(request, response) ;
         } catch (ServletException e) {
             e.printStackTrace();
         }
