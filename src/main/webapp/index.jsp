@@ -20,11 +20,12 @@
             <div>
                 <h1>This is <span class="text-warning">Shark!</span></h1>
                 <p class="lead my-4">Hello World!</p>
+                <a href="/my-jenkins-project/users">Data Base</a>
             </div>
             <img class="img-fluid w-50 d-none d-sm-block" src='<c:url value="/static/doge.jpg"></c:url>' alt="">
         </div>
     </div>
 </section>
-<a href="/my-jenkins-project/users">Data Base</a>
+
 </body>
 </html>
