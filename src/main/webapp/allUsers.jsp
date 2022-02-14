@@ -17,7 +17,7 @@
 <thead>
     <tr>
 
-        <th >ID</th>
+        <th>ID</th>
         <th>NAME</th>
         <th>SURNAME</th>
         <th>AGE</th>
@@ -33,7 +33,7 @@
             <C:param name="userId" value="${user.id}"/>
         </c:url>
         <tbody>
-<%--        <tr>--%>
+        <tr>
             <td >${user.id}</td>
             <td>${user.name}</td>
             <td>${user.surname}</td>
@@ -46,7 +46,7 @@
                 <input type="button" value="Delete"
                        onclick="window.location.href = '${deleteButton}'">
             </td>
-
+        </tr>
         </tbody>
     </c:forEach>
 </table>
