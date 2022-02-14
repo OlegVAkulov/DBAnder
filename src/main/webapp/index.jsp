@@ -66,8 +66,7 @@
     <title>All Users</title>
 </head>
 <body>
-<table class="table table-bordered">
-    
+<table>
     <tr>
         <th>ID</th>
         <th>NAME</th>
@@ -75,9 +74,6 @@
         <th>AGE</th>
         <th>OPERATION</th>
     </tr>
-
-
-
     <c:forEach var="user" items="${usersList}">
 
         <c:url var="updateButton" value="/updateInfo">
@@ -101,7 +97,6 @@
             </td>
         </tr>
     </c:forEach>
-
 </table>
 </body>
 <br>
