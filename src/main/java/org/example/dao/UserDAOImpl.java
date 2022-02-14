@@ -11,7 +11,7 @@ public class UserDAOImpl implements UserDAO {
     public void saveUser(User user) {
 
         try (Connection connection = getConnection()) {
-            PreparedStatement statement = connection.prepareStatement("INSERT INTO users (name, surname, age) values (?,?,?)");
+            PreparedStatement statement = connection.prepareStatement("INSERT INTO people (name, surname, age) values (?,?,?)");
             statement.setString(1, user.getName());
             statement.setString(2, user.getSurname());
             statement.setInt(3, user.getAge());
@@ -24,7 +24,7 @@ public class UserDAOImpl implements UserDAO {
     @Override
     public void deleteUser(int id) {
         try (Connection connection = getConnection()) {
-            PreparedStatement statement = connection.prepareStatement("delete from users where id = ?;");
+            PreparedStatement statement = connection.prepareStatement("delete from people where id = ?;");
             statement.setInt(1, id);
             statement.executeQuery();
         } catch (SQLException throwables) {
@@ -35,7 +35,7 @@ public class UserDAOImpl implements UserDAO {
     @Override
     public void updateUser(User user) {
         try (Connection connection = getConnection()) {
-            PreparedStatement statement = connection.prepareStatement("update users set name = ?,surname= ?, age =? where id = ?;");
+            PreparedStatement statement = connection.prepareStatement("update people set name = ?,surname= ?, age =? where id = ?;");
             statement.setString(1, user.getName());
             statement.setString(2, user.getSurname());
             statement.setInt(3, user.getAge());
@@ -51,7 +51,7 @@ public class UserDAOImpl implements UserDAO {
         List<User> usersList = new ArrayList<>();
         try (Connection connection = getConnection();) {
             Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery("SELECT * FROM users");
+            ResultSet resultSet = statement.executeQuery("SELECT * FROM people");
             while (resultSet.next()) {
                 User user = new User(resultSet.getInt("id"),
                         resultSet.getString("name"),
@@ -71,7 +71,7 @@ public class UserDAOImpl implements UserDAO {
 
         User user = null;
         try (Connection connection = getConnection()) {
-            PreparedStatement statement = connection.prepareStatement("SELECT * FROM users where id = ?");
+            PreparedStatement statement = connection.prepareStatement("SELECT * FROM people where id = ?");
             statement.setInt(1, id);
             ResultSet resultSet = statement.executeQuery();
 
