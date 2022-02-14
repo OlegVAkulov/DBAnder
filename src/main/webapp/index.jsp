@@ -77,6 +77,7 @@
     </tr>
     </thead>
     <tbody>
+
     <c:forEach var="user" items="${usersList}">
 
         <c:url var="updateButton" value="/updateInfo">
