@@ -47,5 +47,7 @@
 <%--        </div>--%>
 <%--    </div>--%>
 <%--</section>--%>
+<input type="button" value="Add"
+       onclick="window.location.href = 'allUser.jsp'"/>
 </body>
 </html>
