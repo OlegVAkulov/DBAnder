@@ -14,7 +14,12 @@
         <a href="#" class="navbar-brand"><span class="text-warning"><h5>Andersen Intensive</h5></span></a>
     </div>
     <a href="UsersServlet">Data Base</a>
+    <input type="button" value="Add"
+           onclick="window.location.href = 'allUser.jsp'"/>
 </nav>
+<a href="UsersServlet">Data Base</a>
+<input type="button" value="Add"
+       onclick="window.location.href = 'allUser.jsp'"/>
 
 <%--<section class="bg-dark text-light p-5 text-center text-sm-start">--%>
 <%--    <div class="container">--%>
@@ -47,7 +52,6 @@
 <%--        </div>--%>
 <%--    </div>--%>
 <%--</section>--%>
-<input type="button" value="Add"
-       onclick="window.location.href = 'allUser.jsp'"/>
+
 </body>
 </html>
