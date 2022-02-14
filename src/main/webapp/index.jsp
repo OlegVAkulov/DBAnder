@@ -59,20 +59,15 @@
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="C" uri="http://java.sun.com/jsp/jstl/core" %>
-<%--
-  Created by IntelliJ IDEA.
-  User: Maxim
-  Date: 13.02.2022
-  Time: 21:32
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>All Users</title>
 </head>
 <body>
-<table>
+<table class="table table-bordered">
+    <thead>
     <tr>
         <th>ID</th>
         <th>NAME</th>
@@ -80,6 +75,8 @@
         <th>AGE</th>
         <th>OPERATION</th>
     </tr>
+    </thead>
+    <tbody>
     <c:forEach var="user" items="${usersList}">
 
         <c:url var="updateButton" value="/updateInfo">
@@ -103,6 +100,7 @@
             </td>
         </tr>
     </c:forEach>
+    </tbody>
 </table>
 </body>
 <br>
