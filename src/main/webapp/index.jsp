@@ -76,7 +76,7 @@
         <th>OPERATION</th>
     </tr>
     </thead>
-    <tbody>
+
 
     <c:forEach var="user" items="${usersList}">
 
@@ -101,7 +101,7 @@
             </td>
         </tr>
     </c:forEach>
-    </tbody>
+
 </table>
 </body>
 <br>
