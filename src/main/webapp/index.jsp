@@ -13,8 +13,9 @@
     <div class="container">
         <a href="#" class="navbar-brand"><span class="text-warning"><h5>Andersen Intensive</h5></span></a>
     </div>
+    <a href="UsersServlet">Data Base</a>
 </nav>
-<a href="UsersServlet">Data Base</a>
+
 <%--<section class="bg-dark text-light p-5 text-center text-sm-start">--%>
 <%--    <div class="container">--%>
 <%--        <div class="d-sm-flex align-items-center justify-content-between">--%>
