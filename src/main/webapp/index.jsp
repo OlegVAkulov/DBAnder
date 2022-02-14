@@ -102,5 +102,5 @@
 <br>
 <input type="button" value="Add"
        onclick="window.location.href = 'userInfo.jsp'"/>
-<a href="UsersServlet">Data Base</a>
+<a href=<url-pattern>/users</url-pattern>>Data Base</a>
 </html>
