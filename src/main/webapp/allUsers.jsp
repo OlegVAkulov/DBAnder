@@ -14,14 +14,14 @@
 </head>
 <body>
 <table>
-    <caption>A summary of the UK's most famous punk bands</caption>
+
     <tr>
         <th scope="row">ID</th>
         <th>NAME</th>
         <th>SURNAME</th>
         <th>AGE</th>
         <th>OPERATION</th>
-    </tr>
+<%--    </tr>--%>
     <c:forEach var="user" items="${usersList}">
 
         <c:url var="updateButton" value="/updateInfo">
@@ -30,7 +30,7 @@
         <c:url var="deleteButton" value="/deleteUser">
             <C:param name="userId" value="${user.id}"/>
         </c:url>
-        <tr>
+<%--        <tr>--%>
             <td scope="row">${user.id}</td>
             <td>${user.name}</td>
             <td>${user.surname}</td>
