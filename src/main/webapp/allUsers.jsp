@@ -17,7 +17,7 @@
 <thead>
     <tr>
 
-        <th scope="row">ID</th>
+        <th >ID</th>
         <th>NAME</th>
         <th>SURNAME</th>
         <th>AGE</th>
@@ -34,7 +34,7 @@
         </c:url>
         <tbody>
 <%--        <tr>--%>
-            <td scope="row">${user.id}</td>
+            <td >${user.id}</td>
             <td>${user.name}</td>
             <td>${user.surname}</td>
             <td>${user.age}</td>
